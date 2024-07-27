@@ -40,6 +40,7 @@ try:
     iter1 = Iterator(100, 200, 0)
     for i in iter1:
         print(i, end=' ')
+    print()
 except StepValueError as ext:
     print(ext.message)
 
@@ -51,10 +52,10 @@ try:
 except StepValueError as ext:
     print(ext.message)
 
+
 iter3 = Iterator(-5, 1)
 iter4 = Iterator(6, 15, 2)
 iter5 = Iterator(5, 1, -1)
-
 
 for i in iter3:
     print(i, end=' ')
