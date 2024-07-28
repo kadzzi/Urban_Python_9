@@ -6,7 +6,8 @@ def is_prime(func):
             if candidate % divider == 0:
                 flag = "Составное"
                 break
-        return flag
+        print(flag)
+        return candidate
     return wrapper
 
 
